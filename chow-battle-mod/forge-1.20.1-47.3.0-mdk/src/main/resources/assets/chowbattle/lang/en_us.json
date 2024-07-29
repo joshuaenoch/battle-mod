@@ -1,0 +1,15 @@
+{
+  "item.chowbattle.ninja_pack": "Ninja Packet",
+  "item.chowbattle.kamikaze_pack": "Kamikaze Packet",
+  "item.chowbattle.gladiator_pack": "Gladiator Packet",
+  "item.chowbattle.survivalist_pack": "Survivalist Packet",
+  "item.chowbattle.bungee": "Bungee",
+  "item.chowbattle.knife": "Knife",
+  "item.chowbattle.wind_boost": "Wind Boost",
+  "item.chowbattle.shuriken_item": "Shuriken",
+  "item.chowbattle.creeper_child": "Creeper Child",
+  "block.chowbattle.insta_tnt": "Insta TNT",
+  "block.chowbattle.trap_tnt": "Trap TNT",
+  "creativetab.example_tab": "Chow Battle"
+
+}
