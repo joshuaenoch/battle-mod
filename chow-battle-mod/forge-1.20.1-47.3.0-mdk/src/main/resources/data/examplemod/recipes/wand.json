@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "a",
+    "g",
+    "s"
+  ],
+  "result": {
+    "item": "chowbattle:wand"
+  }
+}

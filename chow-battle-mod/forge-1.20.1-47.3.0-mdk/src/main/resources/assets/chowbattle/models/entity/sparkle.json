@@ -1,0 +1,6 @@
+{
+  "parent": "entity/sparkle",
+  "textures": {
+    "layer0": "chowbattle:entity/sparkle"
+  }
+}

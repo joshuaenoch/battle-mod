@@ -17,6 +17,10 @@ public class EntityMod
             ENTITY_TYPES.register("shuriken", () -> EntityType.Builder.<Shuriken>of(Shuriken::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("shuriken"));
 
+    public static final RegistryObject<EntityType<Sparkle>> SPARKLE =
+            ENTITY_TYPES.register("sparkle", () -> EntityType.Builder.<Sparkle>of(Sparkle::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("sparkle"));
+
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

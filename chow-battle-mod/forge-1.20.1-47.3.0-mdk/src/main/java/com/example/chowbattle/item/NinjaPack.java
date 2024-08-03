@@ -18,7 +18,7 @@ public class NinjaPack extends Pack{
     @Override
     public void setInventory(Player player){
         player.getInventory().setItem(0, new ItemStack(ItemMod.KNIFE.get()));
-        player.getInventory().setItem(1, new ItemStack(ItemMod.SHURIKEN_ITEM.get(), 16));
+        player.getInventory().setItem(1, new ItemStack(ItemMod.SHURIKEN_ITEM.get(), 32));
         player.getInventory().setItem(2, new ItemStack(ItemMod.BUNGEE.get()));
         player.getInventory().setItem(3, new ItemStack(ItemMod.WIND_BOOST.get()));
         player.getInventory().setItem(4, new ItemStack(Items.COOKED_COD, 16));

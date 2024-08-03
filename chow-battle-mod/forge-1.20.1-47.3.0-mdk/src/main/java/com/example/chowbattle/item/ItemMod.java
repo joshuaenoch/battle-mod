@@ -42,6 +42,8 @@ public class ItemMod {
     // princess modded item
     public static final RegistryObject<Item> PRINCESS_HORN = ITEMS.register("princess_horn",
             () -> new PrincessHorn(new Item.Properties()));
+    public static final RegistryObject<Item> WAND = ITEMS.register("wand",
+            () -> new Wand(new Item.Properties().durability(20)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

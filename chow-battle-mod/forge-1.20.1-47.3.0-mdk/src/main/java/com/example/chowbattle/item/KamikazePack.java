@@ -19,7 +19,7 @@ public class KamikazePack extends Pack{
     @Override
     public void setInventory(Player player){
         player.getInventory().setItem(0, new ItemStack(ItemMod.CREEPER_CHILD.get(), 10));
-        player.getInventory().setItem(1, new ItemStack(BlockMod.INSTA_TNT.get(), 10));
+        player.getInventory().setItem(1, new ItemStack(BlockMod.INSTA_TNT.get(), 3));
         player.getInventory().setItem(2, new ItemStack(BlockMod.TRAP_TNT.get(), 10));
         player.getInventory().setItem(3, new ItemStack(Items.TNT, 10));
         player.getInventory().setItem(4, new ItemStack(Items.FLINT_AND_STEEL));
