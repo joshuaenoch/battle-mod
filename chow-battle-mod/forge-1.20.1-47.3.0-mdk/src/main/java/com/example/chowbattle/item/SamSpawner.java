@@ -1,27 +1,26 @@
 package com.example.chowbattle.item;
 
-import com.example.chowbattle.entity.projectiles.No;
+import com.example.chowbattle.entity.EntityMod;
+import com.example.chowbattle.entity.sam.SamuelEntity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class NoItem extends Item {
-    public NoItem(Properties p_43140_) {
-        super(p_43140_);
+public class SamSpawner extends Item{
+    public SamSpawner(Properties properties) {
+        super(properties);
     }
 
+    @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        ItemStack itemstack = player.getItemInHand(hand);
 
-        if (!level.isClientSide) {
-            No no = new No(level, player);
-            no.setItem(itemstack);
-            no.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
-            level.addFreshEntity(no);
-        }
+        SamuelEntity sam = EntityMod.SAMUEL.get().create(level);
+        level.addFreshEntity(sam);
 
         ItemStack itemStack = player.getItemInHand(hand);
         itemStack.shrink(1);

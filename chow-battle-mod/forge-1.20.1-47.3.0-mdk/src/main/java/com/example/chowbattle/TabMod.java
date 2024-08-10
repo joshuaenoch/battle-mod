@@ -17,7 +17,7 @@ public class TabMod {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ChowBattleMod.MODID);
 
-    public static final RegistryObject<CreativeModeTab> TUTORIAL_TAB = CREATIVE_MODE_TABS.register("example_tab",
+    public static final RegistryObject<CreativeModeTab> Chow_BATTLE_TAB = CREATIVE_MODE_TABS.register("example_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.ENDER_CHEST.asItem()))
                     .title(Component.translatable("creativetab.example_tab"))
                     .displayItems((pParameters, pOutput) -> {
@@ -25,6 +25,7 @@ public class TabMod {
                         pOutput.accept(ItemMod.SURVIVALIST_PACK.get());
                         pOutput.accept(ItemMod.NINJA_PACK.get());
                         pOutput.accept(ItemMod.KAMIKAZE_PACK.get());
+                        pOutput.accept(ItemMod.SAM_PACK.get());
 
                         pOutput.accept(ItemMod.KNIFE.get());
                         pOutput.accept(ItemMod.SHURIKEN_ITEM.get());

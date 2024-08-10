@@ -2,9 +2,11 @@ package com.example.chowbattle;
 
 import com.example.chowbattle.block.BlockMod;
 import com.example.chowbattle.entity.EntityMod;
+import com.example.chowbattle.entity.sam.SamuelRenderer;
 import com.example.chowbattle.item.ItemMod;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -91,6 +93,7 @@ public class ChowBattleMod
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            EntityRenderers.register(EntityMod.SAMUEL.get(), SamuelRenderer::new);
         }
     }
 }

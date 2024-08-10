@@ -1,8 +1,10 @@
 package com.example.chowbattle.item;
 
 import com.example.chowbattle.ChowBattleMod;
+import com.example.chowbattle.entity.EntityMod;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,6 +26,8 @@ public class ItemMod {
             () -> new GladiatorPack(new Item.Properties()));
     public static final RegistryObject<Item> SURVIVALIST_PACK = ITEMS.register("survivalist_pack",
             () -> new SurvivalistPack(new Item.Properties()));
+    public static final RegistryObject<Item> SAM_PACK = ITEMS.register("special_pack",
+            () -> new SamPack(new Item.Properties()));
 
     // ninja modded items
     public static final RegistryObject<Item> BUNGEE = ITEMS.register("bungee",
@@ -44,6 +48,14 @@ public class ItemMod {
             () -> new PrincessHorn(new Item.Properties()));
     public static final RegistryObject<Item> WAND = ITEMS.register("wand",
             () -> new Wand(new Item.Properties().durability(20)));
+
+    // misc
+    public static final RegistryObject<Item> NO_ITEM = ITEMS.register("no_item",
+            () -> new NoItem(new Item.Properties()));
+    public static final RegistryObject<Item> FAKE_AK = ITEMS.register("fake_ak",
+            () -> new FakeAK(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> SAM_EGG = ITEMS.register("sam_egg",
+            () -> new SamSpawner(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

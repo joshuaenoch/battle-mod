@@ -1,4 +1,4 @@
-package com.example.chowbattle.entity;
+package com.example.chowbattle.entity.projectiles;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

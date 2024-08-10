@@ -6,24 +6,25 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class Wand extends Item {
+public class FakeAK extends Item {
 
-    public Wand(Properties properties) {
+    public FakeAK(Properties properties) {
         super(properties);
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
 
-        level.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.AMETHYST_BLOCK_STEP, SoundSource.PLAYERS, 1.0F, 1.0F);
+        level.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.FIREWORK_ROCKET_BLAST, SoundSource.PLAYERS, 1.0F, 1.0F);
 
-        Sparkle sparkle = new Sparkle(level, player);
-        sparkle.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 3F, 1.0F);
-        level.addFreshEntity(sparkle);
+        Arrow arrow = new Arrow(level, player);
+        arrow.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 5F, 1.0F);
+        level.addFreshEntity(arrow);
 
         //return
         ItemStack itemStack = player.getItemInHand(interactionHand);

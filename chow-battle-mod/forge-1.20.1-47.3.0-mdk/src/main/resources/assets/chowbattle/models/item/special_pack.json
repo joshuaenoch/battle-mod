@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "chowbattle:item/no_item"
+    "layer0": "chowbattle:item/special_pack"
   }
 }

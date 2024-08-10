@@ -4,12 +4,15 @@
   "item.chowbattle.gladiator_pack": "Gladiator Packet",
   "item.chowbattle.survivalist_pack": "Survivalist Packet",
   "item.chowbattle.bungee": "Bungee",
+  "item.chowbattle.special_pack": "Samuel Packet",
   "item.chowbattle.knife": "Knife",
   "item.chowbattle.wind_boost": "Wind Boost",
   "item.chowbattle.shuriken_item": "Shuriken",
   "item.chowbattle.creeper_child": "Creeper Child",
+  "item.chowbattle.no_item": "Sam",
   "block.chowbattle.insta_tnt": "Insta TNT",
   "block.chowbattle.trap_tnt": "Trap TNT",
+  "entity.chowbattle.samuel": "Samuel",
   "creativetab.example_tab": "Chow Battle"
 
 }
